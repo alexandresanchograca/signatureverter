@@ -1,4 +1,4 @@
-# Arena Shooter Calculator
+# Byte Signature Style Converter
 
 Hosted on: https://hatumgit.github.io/signatureverter/
 
