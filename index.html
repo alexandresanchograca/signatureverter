@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte Signature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Byte Signature Converter</h1>
+    </header>
+    <section>
+        <h4>
+            <p>Signature Style:</p>
+        </h4>
+        <div id="data">
+            IDA:
+            <input class="inputText" type="text" id="idaSig">
+            <p>AOB:
+            <input class="inputText" type="text" id="aobSig"></p>
+        </div> 
+
+        <div id="process">
+            <input class="button-30" type="button" value="Convert Signature" onclick="ProcessData()">
+        </div>
+    </section>
+    <section>
+        <h4>
+            Your Results:
+        </h4>
+        <div id="results">
+            <p>IDA Sig:<label id="idaOutput"></label>
+            <button class="button-30" onclick="copyIda()">
+                <img id="copyImg" src="dados/copy.png" alt="copy">
+            </button></p>
+            <p>Array-Of-Bytes Signature:<label id="aobOutput"></label>
+            <button class="button-30" onclick="copyAob()">
+                <img id="copyImg" src="dados/copy.png" alt="copy">
+            </button></p>
+            <p>Mask:<label id="maskOutput" ></label>
+            <button class="button-30" onclick="copyMask()">
+                <img id="copyImg" src="dados/copy.png" alt="copy">
+            </button></p>
+        </div>
+    </section>
+    <footer>
+        <p><a id="gitlink" href="https://github.com/hatumgit/arenashooter"><img id="gitimg" src="dados/giticon.png" alt="git">hatum</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body> 
+</html>
